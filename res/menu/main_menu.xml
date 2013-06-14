@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <group
+        android:id="@+id/groupMode"
+        android:checkableBehavior="single" >
+        <item
+            android:id="@+id/SlaveModeItem"
+            android:title="@string/textSlaveMode"/>
+        <item
+            android:id="@+id/ConnectedModeItem"
+            android:title="@string/textConnectedMode"/>
+        <item
+            android:id="@+id/MissionModeItem"
+            android:title="@string/textMissionMode"/>
+        <item
+            android:id="@+id/VirtualModeItem"
+            android:title="@string/textVirtualMode" android:checked="true"/>
+    </group>
+
+</menu>

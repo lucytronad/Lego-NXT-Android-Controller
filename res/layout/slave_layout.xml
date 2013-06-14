@@ -1,0 +1,118 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+<RelativeLayout
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context=".MainActivity" >
+
+    <ImageButton
+        android:id="@+id/button_forward"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_above="@+id/button_backward"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="false"
+        android:background="@drawable/bouton_backward"
+        android:longClickable="true" />
+
+    <ImageButton
+        android:id="@+id/button_left"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/bouton_left"
+        android:longClickable="true" />
+
+    <ImageButton
+        android:id="@+id/button_right"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/button_left"
+        android:background="@drawable/bouton_right"
+        android:longClickable="true" />
+
+    <ImageButton
+        android:id="@+id/button_backward"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/bouton_forward"
+        android:longClickable="true" />
+
+    <ImageButton
+        android:id="@+id/button_right_head"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bouton_right" />
+
+    <ImageButton
+        android:id="@+id/button_ultrasonic"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/button_right_head"
+        android:background="@drawable/bouton_ultrasonic" />
+
+    <ImageButton
+        android:id="@+id/button_left_head"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/button_ultrasonic"
+        android:background="@drawable/bouton_left" />
+
+    <ImageButton
+        android:id="@+id/button_light"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="50dp"
+        android:layout_toLeftOf="@+id/button_left_head"
+        android:background="@drawable/bouton_light" />
+
+    <TextView
+        android:id="@+id/lightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignLeft="@+id/button_light"
+        android:layout_below="@id/button_light"
+        android:layout_marginLeft="41dp"
+        android:text="N/A"
+        android:textColor="@android:color/black"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/sensorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lightText"
+        android:layout_alignBottom="@+id/lightText"
+        android:layout_toLeftOf="@+id/lightText"
+        android:text="N/A"
+        android:textColor="@android:color/black"
+        android:textSize="28sp" />
+
+    <ImageButton
+        android:id="@+id/button_center"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/lightText"
+        android:layout_toRightOf="@+id/button_left_head"
+        android:background="@drawable/bouton_center" />
+
+</RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,34 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6565d2"
+    tools:context=".StartActivity" >
+
+    <SurfaceView
+        android:id="@+id/startImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="566dp"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/menu_title" />
+
+    <Button
+        android:id="@+id/SimpleWorldButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startImage"
+        android:layout_centerHorizontal="true"
+        android:text="@string/textWorldSimple" />
+
+    <Button
+        android:id="@+id/CompleWorldButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SimpleWorldButton"
+        android:layout_centerHorizontal="true"
+        android:text="@string/textWorldComp" />
+
+</RelativeLayout>
